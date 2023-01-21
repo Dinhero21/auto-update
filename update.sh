@@ -23,7 +23,7 @@ REPO_URL="$(git config --get remote.origin.url)"
 
   # Clone repository to temporary directory
   echo Cloning repository...
-  git clone $REPO_URL $TEMP
+  git clone $REPO_URL $TEMP -q
   echo Clone complete!
 
   # Move files from temporary directory to current directory
