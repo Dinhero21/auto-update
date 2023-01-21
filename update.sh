@@ -28,7 +28,7 @@ REPO_URL="$(git config --get remote.origin.url)"
 
   # Move files from temporary directory to current directory
     cp -rf $TEMP/* .
-    rm -rf $TEMP 
+    rm -rf $TEMP
 
 # Merge files
   echo Merging files...
@@ -41,7 +41,7 @@ REPO_URL="$(git config --get remote.origin.url)"
       rm -rf $DEFAULT
 
   # Merge current files
-    if [ -d $OUTPUT ]
+    if [ -d "$OUTPUT" ]
     then
       # Move current files to temporary directory
         cp -rf $OUTPUT/* $TEMP
